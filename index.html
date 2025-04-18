@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Sky Diary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="notepad">
+    <h1>Sky Diary</h1>
+    <textarea id="noteArea" placeholder="Write your thoughts here..."></textarea>
+    <div class="buttons">
+      <button onclick="saveNote()">💾 </button>
+      <button onclick="clearNote()">🧹 </button>
+    </div>
+    <p class="saved-message" id="savedMessage"></p>
+    
+    <div class="saved-notes">
+      <h2>Saved Notes</h2>
+      <ul id="notesList"></ul> 
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
